@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-content {
+    height: 962px;
+    padding: 62px 190px;
+
+    background: url("../img/Hero.png") no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+
+    margin-bottom: 175px;
+}
+
+.menu-container {
+    color: white;
+}
+
+.menu-container ul {
+    display: flex;
+    margin: 0px;
+    gap: 82px;
+    
+}
+
+.menu-container ul li {
+    list-style: none;
+
+}
+
+.menu-container ul li a {
+    text-decoration: none;
+    font-size: 18px;
+
+    color: white;
+}
+
+.menu-container ul li a:hover {
+    color: rgba(255, 255, 255, 0.818);
+}
+
+.text-container {
+    text-align: left;
+
+    color: white;
+}
+
+.text-container h1 {
+    font-size: 50px;
+    padding-right: 450px;
+}
+
+.text-container p {
+    font-size: 16px;
+    padding-right: 620px;
+}
