@@ -1,63 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
 body {
     margin: 0px;
     padding: 0px;
+
+    font-family: 'Lato', sans-serif;
 }
 
-.header-content {
-    height: 962px;
-    padding: 62px 190px;
+.wrapper {
+    height: max-content;
+}
 
-    background: url("../img/Hero.png") no-repeat;
+
+.header-block {
+    height: 962px;
+    padding: 0px 56px;
+
+    background: url("../img/Image.png") no-repeat;
     background-size: cover;
 }
 
+
+/*=============================Header===============================*/
 header {
+    max-width: 1060px;
+    padding-top: 56px;
+
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 
-    margin-bottom: 175px;
+    margin: 0px auto;
+    margin-bottom: 176px;
 }
 
-.menu-container {
+.menu-block ul {
+    display: flex;
+    gap: 82px;
+
+    list-style: none;
+}
+
+.menu-block ul li a {
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+
     color: white;
 }
 
-.menu-container ul {
+.menu-block ul li a:hover {
+    color: rgba(255, 255, 255, 0.79);
+}
+
+
+/*===============================Text Header==============================*/
+.text-block {
+    max-width: 1060px;
+    margin: 0px auto;
+    margin-bottom: 59px;
+
+    color: white;
+}
+
+.text-block h1{
+    max-width: 650px;
+    font-size: 50px;
+}
+
+.text-block p{
+    max-width: 550px;
+    font-size: 16px;
+}
+
+
+/*==============================Search============================*/
+.search-block {
+    max-width: 1060px;
+    margin: 0px auto;
+
     display: flex;
-    margin: 0px;
-    gap: 82px;
-    
 }
 
-.menu-container ul li {
-    list-style: none;
-
+.search-block form {
+    display: flex;
 }
 
-.menu-container ul li a {
-    text-decoration: none;
+.container {
+    margin-right: 61px;
     font-size: 18px;
 
     color: white;
 }
 
-.menu-container ul li a:hover {
-    color: rgba(255, 255, 255, 0.818);
+.container input {
+    margin-right: 20px;
+
+    width: 16px;
+    height: 16px;
 }
 
-.text-container {
-    text-align: left;
+.bottom-blok {
+    width: 100%;
+    height: 1px;
+    margin-top: 22px;
 
+    background-color: white;
+}
+
+.button-search {
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+
+    background-color: #1B7DFF;
     color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.text-container h1 {
-    font-size: 50px;
-    padding-right: 450px;
+.button-search:active {
+    background-color: #1666cf;
 }
 
-.text-container p {
+
+/*==============================Benefits=============================*/
+.benefits-block {
+    position: relative;
+    max-width: 1160px;
+    margin: 0px 56px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    padding: 100px;
+
+    top: -150px;
+
+    background-color: white;
+    box-shadow:  10px 1px 50px 5px black
+}
+
+.benefits-block h1 {
+    margin-bottom: 120px;
+    font-size: 35px;
+}
+
+.container-cart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 55px;
+}
+  
+.column-cart {
+    max-width: 317px;
+    height: max-content;
+}
+
+.logo-cart {
+    width: 66px;
+    height: 66px;
+}
+
+.cart h3 {
+    margin: 30px 0px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cart p {
+    max-width: 300px;
     font-size: 16px;
-    padding-right: 620px;
+}
+
+.cart h2 {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #006DFE;
+
+    cursor: pointer;
+}
+
+.cart h2 span {
+    margin-left: 20px;
+    transition: 0.4s;
+}
+
+.cart h2 span:hover {
+    margin-left: 25px;
+    transition: 0.4s;
+}
+
+
+/*===========================Photo=============================*/
+.photo-block {
+    max-width: 1360px;
+    margin: 0px auto;
+    margin-bottom: 130px;
+}
+
+.title-block {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+.title-block h1 {
+    font-size: 35px;
+}
+
+.block-blue {
+    width: 250px;
+    height: 2px;
+
+    background-color: #006DFE;
+}
+
+.button h2 {
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #006DFE;
+}
+
+.button h2 span {
+    margin-left: 10px;
+}
+  
+  
+/*============================Mobile=============================*/
+@media(max-width: 816px) {
+    .menu-block {
+        display: none;
+    }
+
+    .search-block,
+    .search-block form {
+        display: block;
+    }
+
+    .search-block form {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        margin-bottom: 20px;
+    }
+
+    .bottom-blok {
+        display: none;
+    }
+
+    .benefits-block {
+        top: -30px;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .container-cart{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 55px;
+    }
+
+    .column-cart {
+        margin: 0px auto;
+    }
+
+    .benefits-block,
+    .photo-block {
+        margin: 0px 20px;
+    }
 }
