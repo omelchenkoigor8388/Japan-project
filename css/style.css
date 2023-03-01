@@ -229,13 +229,26 @@ header {
   
 /*============================Mobile=============================*/
 @media(max-width: 816px) {
+
+
     .header-block {
+        margin-top: 64px;
         background: url(../img/Image.png) center;
+    }
+
+    header {
+        position: absolute;
+        position: fixed;
+        padding: 0px 5px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background: rgb(0, 0, 0);
     }
 
     .menu-toggle {
         display: block;
-        position: fixed;
+
         top: 30px;
         right: 20px;
         z-index: 1;
@@ -263,6 +276,10 @@ header {
         overflow-y: scroll;
         transition: all 0.3s ease-in-out;
         z-index: 1;
+    }
+
+    .menu-toggle-checkbox {
+        color: white;
     }
 
     .menu-block.show-menu {
