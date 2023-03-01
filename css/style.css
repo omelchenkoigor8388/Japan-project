@@ -229,9 +229,87 @@ header {
   
 /*============================Mobile=============================*/
 @media(max-width: 816px) {
-    .menu-block {
+    .header-block {
+        background: url(../img/Image.png) center;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .input-menu {
         display: none;
     }
+
+    .menu-toggle label {
+        display: block;
+        font-size: 2rem;
+        line-height: 1;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .menu-block {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0;
+        background-color: rgba(0, 0, 0, 0.829);
+        overflow-y: scroll;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    .menu-block.show-menu {
+        width: 100%;
+    }
+
+    .menu-block nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+    }
+
+    .menu-block ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-block li {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .menu-block a {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-block a:hover {
+        color: #777;
+    }
+
+    .close-menu-btn {
+        border: none;
+        font-size: 16px;
+
+        color: white;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+      
+    
 
     .search-block,
     .search-block form {
