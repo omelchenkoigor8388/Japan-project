@@ -444,8 +444,6 @@ header {
         top: -30px;
         text-align: center;
         padding: 50px;
-
-        z-index: -1;
     }
 
     .container-cart{
