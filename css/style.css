@@ -219,9 +219,15 @@ header {
     background-color: #006DFE;
 }
 
+.button {
+    display: flex;
+}
+
 .button h2 {
     font-size: 16px;
     font-weight: 700;
+    align-items: center;
+    display: flex;
 
     color: #006DFE;
 }
@@ -229,6 +235,82 @@ header {
 .button h2 span {
     margin-left: 10px;
 }
+
+.grid-container-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки з однаковою шириною */
+    grid-gap: 10px; /* відступи між елементами сітки */
+    margin-bottom: 10px;
+}
+  
+.grid-item-top {
+    position: relative;
+    cursor: pointer;
+    height: 364px;
+    background-color: #ccc; /* колір фону для елементів сітки */
+}
+
+.grid-item-top
+.grid-item-botton {
+    transition:  transform 0.3s;
+}
+
+.mount-photo {
+    background-image: url("../img/Mount.png");
+    background-size: cover;
+
+}
+
+.kyoto-photo {
+    background-image: url("../img/Kyoto.png");
+    background-size: cover;
+}
+
+.grid-item-top:hover,
+.grid-item-botton:hover {
+    transform: scale(1.02);
+}
+
+
+.grid-item-top h1,
+.grid-container-botton h1 {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+
+    color: white;
+}
+
+.grid-container-botton {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 колонки з однаковою шириною */
+    grid-gap: 10px; /* відступи між елементами сітки */
+}
+  
+.grid-item-botton {
+    position: relative;
+    cursor: pointer;
+    height: 283px;
+    background-color: #ccc; /* колір фону для елементів сітки */
+}
+
+.tokyo-photo {
+    background-image: url("../img/Tokyo.png");
+    background-size: cover;
+}
+
+.niigata-photo {
+    background-image: url("../img/Niigata.png");
+    background-size: cover;
+}
+
+.sapporo-photo {
+    background-image: url("../img/Sapporo.png");
+    background-size: cover;
+}
+
+  
   
   
 /*============================Mobile=============================*/
