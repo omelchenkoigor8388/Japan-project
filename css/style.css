@@ -367,6 +367,10 @@ header {
 /*============================Mobile=============================*/
 @media(max-width: 816px) {
 
+    .wrapper {
+        margin-bottom: 150px;
+    }
+
     /*=============================Header===============================*/
     .header-block {
         position: relative;
