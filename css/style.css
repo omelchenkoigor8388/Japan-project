@@ -199,6 +199,7 @@ header {
     max-width: 1360px;
     margin: 0px auto;
     margin-bottom: 130px;
+
 }
 
 .title-block {
@@ -316,8 +317,10 @@ header {
 /*============================Mobile=============================*/
 @media(max-width: 816px) {
 
-
+/*=============================Header===============================*/
     .header-block {
+        position: relative;
+        z-index: 9999;
         margin-top: 64px;
         background: url(../img/Image.png) center;
     }
@@ -416,7 +419,7 @@ header {
 
       
     
-
+/*==============================Search============================*/
     .search-block,
     .search-block form {
         display: block;
@@ -434,6 +437,9 @@ header {
         display: none;
     }
 
+
+
+/*==============================Benefits=============================*/
     .benefits-block {
         top: -30px;
         text-align: center;
@@ -454,5 +460,19 @@ header {
     .benefits-block,
     .photo-block {
         margin: 0px 20px;
+    }
+
+
+
+/*===========================Photo=============================*/
+    .grid-container-top,
+    .grid-container-botton {
+        display: block;
+    }
+
+    .grid-item-top,
+    .grid-item-botton {
+        margin-bottom: 10px;
+
     }
 }
