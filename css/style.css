@@ -362,7 +362,101 @@ header {
     width: 40px;
     height: 60px;
 }
-  
+
+
+
+/*===========================Today Cart Info======================*/
+.today-cart-info {
+    max-width: 1360px;
+    margin: 0px auto;
+    margin-bottom: 145px;
+    padding: 0px 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 колонки */
+    grid-template-rows: repeat(2, auto); /* 3 ряди */
+    gap: 55px; /* відступи між елементами */
+    margin-top: 20px;
+}
+
+.item {
+    background-color: #fff; /* колір фону */
+}
+
+.item-cart {
+    width: 100%;
+    height: 377px;
+}
+
+.cart-img {
+    position: relative;
+}
+
+.NAGOYA,
+.NIIGATA,
+.OSAKA,
+.SAITAMA,
+.UENO,
+.SHIBUYA {
+    width: 100%;
+    height: 100%;
+    background: url("../img/nagoya.png");
+    background-size: cover;
+}
+
+.NIIGATA {
+    background: url("../img/nigata.png");
+}
+
+.OSAKA {
+    background: url("../img/osaka.png");
+}
+
+.SAITAMA {
+    background: url("../img/saitama.png");
+}
+
+.UENO {
+    background: url("../img/ueno.png");
+}
+
+.SHIBUYA {
+    background: url("../img/shibuya.png");
+}
+
+.cart-img-bottom-block {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.488);
+}
+
+.item-name-cart {
+    padding-left: 15px;
+}
+
+.item-like-coment-cart {
+    display: flex;
+}
+
+.item-like-coment-cart p {
+    display: flex;
+    padding-right: 15px;
+}
+
+.item-like-coment-cart p span {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+}
+
   
 /*============================Mobile=============================*/
 @media(max-width: 816px) {
@@ -575,6 +669,51 @@ header {
 
     .second {
         order: 1;
+    }
+
+
+    /*===========================Today Cart Info======================*/
+    .item {
+        margin-top: 50px;
+    }
+
+    .item .button-search {
+        width: 100px;
+        height: 30px;
+        padding: 0px;
+
+        font-size: 12px;
+    }
+
+    .today-cart-info {
+        max-width: 1360px;
+        margin: 0px auto;
+        padding: 0px 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        grid-template-rows: repeat(3, auto); /* 3 ряди */
+        gap: 10px; /* відступи між елементами */
+        margin-top: 20px;
+    }
+
+    .cart-img-bottom-block {
+        display: block;
+        height: auto;
+    }
+
+    .cart-img-bottom-block p {
+        margin: 2px;
+    }
+
+    .item-name-cart {
+        padding-left: 10px;
+    }
+
+    .item-like-coment-cart {
+        justify-content: space-around;
     }
 }
 
